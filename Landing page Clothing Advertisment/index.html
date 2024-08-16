@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Advertisement Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1581/PNG/512/3668861-clothes-fashion-outfit-tshirt_108013.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Marquee Offer -->
+    <div class="bg-gray-900 text-white text-center p-2">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            Limited Time Offer: Get 20% off on all items! Use code TIC20 at checkout.
+        </marquee>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">TIC Co.</a>
+            <button id="menu-button" class="text-white md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+            <ul id="menu" class="hidden md:flex space-x-4 mt-4">
+                <!-- Added 'mt-2' for margin top -->
+                <li><a href="#home" class="hover:text-primary">Home</a></li>
+                <li><a href="#about" class="hover:text-primary">About</a></li>
+                <li><a href="#services" class="hover:text-primary">Services</a></li>
+                <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+            </ul>
+        </div>
+        <ul id="mobile-menu" class="absolute top-16 right-0 bg-gray-800 text-white w-full md:hidden hidden flex-col space-y-4 mt-2">
+            <!-- Added 'mt-2' for margin top -->
+            <li><a href="#home" class="block px-4 py-2">Home</a></li>
+            <li><a href="#about" class="block px-4 py-2">About</a></li>
+            <li><a href="#services" class="block px-4 py-2">Services</a></li>
+            <li><a href="#contact" class="block px-4 py-2">Contact</a></li>
+        </ul>
+        <p class="text-white-400 mt-4">The Intelligence Clothing</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1519554318711-aaf73ece6ff9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto h-full flex items-center justify-center">
+            <div class="text-center text-white z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeIn">Welcome to Clothing Co.</h1>
+                <p class="text-lg md:text-xl mb-8 animate__animated animate__fadeIn animate__delay-1s">Fashion for Everyone - Men, Women, Kids, and More!</p>
+                <a href="#services" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Explore Our Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-primary">About Us</h2>
+            <p class="text-lg mb-6 text-gray-300 mx-auto max-w-lg">At Clothing Co., we deliver high-quality clothing for the entire family, combining style, comfort, and affordability. Our curated collections feature the latest trends and durable fabrics to ensure you look and feel great for any occasion.
+                We are dedicated to providing exceptional value and a seamless shopping experience, making fashion accessible and enjoyable for everyone.</p>
+        </div>
+    </section>
+    <section id="services" class="py-16 bg-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-primary">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                <!-- Men's Clothing -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://www.sustainablejungle.com/wp-content/uploads/2022/11/Images-by-United-by-Blue-1.jpg" alt="Men's Clothing" class="w-full h-32 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-success">Men's Clothing</h3>
+                    <p>Stylish and comfortable clothing for modern men.</p>
+                    <a href="mens.html" class="inline-block mt-4 text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+                <!-- Women's Clothing -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://d2line.com/thatlook/wp-content/uploads/sites/4/2022/09/women-fashion-and-women-clothing.png" alt="Women's Clothing" class="w-full h-32 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-success">Women's Clothing</h3>
+                    <p>Trendy and fashionable clothing for women.</p>
+                    <a href="womens.html" class="inline-block mt-4 text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+                <!-- Kids' Clothing -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://prathaa.in/cdn/shop/articles/PHOTO-2021-08-08-19-40-33-686608.jpg?v=1722067300" alt="Kids' Clothing" class="w-full h-32 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-success">Kids' Clothing</h3>
+                    <p>Fun and durable clothing for active growing kids.</p>
+                    <a href="kids.html" class="inline-block mt-4 text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+                <!-- Accessories -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/3q6QfJJZgqTljZhxbwliRz/ecde7628474fb6613b460adedf02f64f/AdobeStock_185261221.jpeg" alt="Accessories" class="w-full h-32 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-success">Accessories</h3>
+                    <p>Complete your look with our stylish accessories.</p>
+                    <a href="accessories.html" class="inline-block mt-4 text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-primary">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1706883085307-40b73255769f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Clothing 1" class="w-full h-80 object-cover rounded-lg transition-transform transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Stylish Outerwear</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1416339698674-4f118dd3388b?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Clothing 2" class="w-full h-80 object-cover rounded-lg transition-transform transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Elegant Dresses</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Clothing 3" class="w-full h-80 object-cover rounded-lg transition-transform transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Casual Wear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-primary">What Our Customers Say</h2>
+            <div class="flex flex-col space-y-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <p class="text-lg mb-4">“I love the variety of clothing options available. The quality is top-notch and the service is excellent!”</p>
+                    <p class="font-semibold">– __________</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <p class="text-lg mb-4">“Their kids' clothing line is fantastic. My children love the designs, and I love the durability.”</p>
+                    <p class="font-semibold">– ___________</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center justify-center bg-gray-800 rounded-lg shadow-md overflow-hidden max-w-6xl mx-auto">
+                <!-- Image Section -->
+                <div class="lg:w-1/2 flex justify-center p-4 lg:p-8">
+                    <img src="https://wisdomspringstraining.com/wp-content/uploads/2017/08/156148-160269.png" alt="Contact Image" class="w-full max-w-xs rounded-lg shadow-md">
+                </div>
+
+                <!-- Contact Form Section -->
+                <div class="lg:w-1/2 flex flex-col items-center p-6 lg:p-8">
+                    <h2 class="text-3xl font-bold mb-6 text-primary text-center">Contact Us</h2>
+                    <p class="text-lg mb-6 text-center text-gray-300">Have any questions? Reach out to us, and we'll get back to you as soon as possible.</p>
+                    <form class="w-full max-w-md space-y-4">
+                        <div class="mb-4">
+                            <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-primary transition duration-300">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" placeholder="Your Email" class="w-full p-4 bg-gray-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-primary transition duration-300">
+                        </div>
+                        <div class="mb-4">
+                            <textarea placeholder="Your Message" class="w-full p-4 bg-gray-900 text-white rounded focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"></textarea>
+                        </div>
+                        <button type="submit" class="bg-success text-white py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8">
+                <!-- Contact Us -->
+                <div class="mb-6 lg:mb-0 w-full lg:w-1/3">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Contact Us</h3>
+                    <p class="text-gray-300 mb-2">Greater Noida, Fashion City, 201310</p>
+                    <p class="text-gray-300 mb-2">Phone: <a href="tel:+918603765100" class="hover:underline">+91 8603765100</a></p>
+                    <p class="text-gray-300 mb-2">Email: <a href="mailto:contact@clothingco.com" class="hover:underline">contact@clothingco.com</a></p>
+                </div>
+                <!-- Follow Us -->
+                <div class="mb-6 lg:mb-0 w-full lg:w-1/3">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-100" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.049c-5.51 0-9.951 4.44-9.951 9.951 0 4.975 3.656 9.103 8.438 9.951v-7h-2.548v-2.7h2.548v-2.003c0-2.513 1.496-3.881 3.717-3.881 1.075 0 2.01.08 2.277.116v2.645h-1.566c-1.229 0-1.466.584-1.466 1.433v1.882h2.732l-.355 2.7h-2.377v7.014c4.549-.848 8.071-4.974 8.071-9.949 0-5.511-4.44-9.951-9.951-9.951z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-100" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.46 6.003c-.815.364-1.688.61-2.605.72a4.565 4.565 0 002.004-2.518 9.086 9.086 0 01-2.887 1.1 4.551 4.551 0 00-7.76 4.147 12.878 12.878 0 01-9.349-4.735 4.551 4.551 0 001.411 6.07 4.532 4.532 0 01-2.065-.572v.057a4.555 4.555 0 003.646 4.457 4.54 4.54 0 01-2.059.078 4.558 4.558 0 004.251 3.161 9.126 9.126 0 01-5.653 1.95c-.367 0-.73-.021-1.089-.063a12.831 12.831 0 006.957 2.046c8.354 0 12.932-6.927 12.932-12.932 0-.197-.004-.393-.01-.588a9.19 9.19 0 002.259-2.333z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-100" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 2H8C5.791 2 4 3.791 4 6v12c0 2.209 1.791 4 4 4h8c2.209 0 4-1.791 4-4V6c0-2.209-1.791-4-4-4zm2 16.019c0 .551-.448.981-.981.981H6.981A.981.981 0 016 18.019V6.981c0-.551.448-.981.981-.981h10.038c.551 0 .981.448.981.981v12.038zM12 8.5c-2.1 0-3.5 1.4-3.5 3.5s1.4 3.5 3.5 3.5 3.5-1.4 3.5-3.5-1.4-3.5-3.5-3.5zm0 5.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm4-6.5h1.5v1.5H16v-1.5z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-100" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.23 0H1.77C.791 0 0 .791 0 1.77v20.46c0 .979.791 1.77 1.77 1.77h20.46c.979 0 1.77-.791 1.77-1.77V1.77C24 .791 23.209 0 22.23 0zM7.112 20.452H4.621V9.65h2.491v10.802zm-1.246-12.5a1.436 1.436 0 11-.001-2.873 1.436 1.436 0 01.001 2.873zm13.366 12.5h-2.491v-5.606c0-1.338-.026-3.063-1.865-3.063-1.865 0-2.151 1.454-2.151 2.96v5.709h-2.49V9.65h2.39v1.432h.034c.334-.634 1.153-1.305 2.37-1.305 2.538 0 3.002 1.67 3.002 3.848v7.827z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="py-8 px-4 bg-gray-900 rounded-lg shadow-md w-full lg:w-1/3">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Newsletter</h3>
+                    <form action="#" method="POST" class="flex flex-col items-center">
+                        <input type="email" name="newsletter-email" placeholder="Your Email" class="w-full max-w-xs p-4 mb-4 border border-gray-600 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition duration-300">
+                        <button type="submit" class="bg-blue-700 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition duration-300">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-gray-400">&copy; 2024 Clothing Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

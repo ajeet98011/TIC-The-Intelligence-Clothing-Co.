@@ -35,6 +35,10 @@ nav ul li a:hover {
     color: #3b82f6;
 }
 
+#home {
+    height: 75vh;
+}
+
 
 /* Mobile Menu Button */
 
